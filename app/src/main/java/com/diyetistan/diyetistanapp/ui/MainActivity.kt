@@ -15,10 +15,13 @@ import com.diyetistan.diyetistanapp.helper.BottomNavigationPosition
 import com.diyetistan.diyetistanapp.helper.createFragment
 import com.diyetistan.diyetistanapp.helper.findNavigationPositionById
 import com.diyetistan.diyetistanapp.helper.getTag
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_home.*
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
+
+    val mAuth = FirebaseAuth.getInstance()
 
     private val KEY_POSITION = "keyPosition"
 
@@ -27,6 +30,8 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     private lateinit var toolbar: Toolbar
 
     private lateinit var bottomNavigation: BottomNavigationView
+
+    var savedDispTxt = ""
 
 
     lateinit var mDatabase : DatabaseReference
@@ -45,8 +50,12 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
 
         mDatabase.addValueEventListener(object : ValueEventListener{
             override fun onDataChange(p0: DataSnapshot) {
-                val result = p0.child("Name").toString()
+                val user = mAuth.currentUser
+                val uid = user!!.uid
+                val result = p0.child(uid).child("Name").value
                 dispTxt.text = "Merhaba "+ result
+                savedDispTxt = "Merhaba " + result
+                dispTxt.text = savedDispTxt
             }
 
             override fun onCancelled(p0: DatabaseError?) {
