@@ -1,9 +1,10 @@
-package com.diyetistan.diyetistanapp
+package com.diyetistan.diyetistanapp.ui
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
+import com.diyetistan.diyetistanapp.R
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
@@ -20,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
             login()
         }
         btn_register_account.setOnClickListener {
-            startActivity(Intent(this,RegisterActivity::class.java))
+            startActivity(Intent(this, RegisterActivity::class.java))
         }
 
 
@@ -36,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
 
                 if(task.isSuccessful){
                     Toast.makeText(this,"Giriş Başarılı",Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this,MainActivity::class.java))
+                    startActivity(Intent(this, MainActivity::class.java))
                 }
                 else{
                     Toast.makeText(this,"Hatalı Giriş.",Toast.LENGTH_SHORT).show()

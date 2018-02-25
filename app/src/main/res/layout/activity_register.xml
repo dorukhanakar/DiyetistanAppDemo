@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.diyetistan.diyetistanapp.RegisterActivity">
+    tools:context="com.diyetistan.diyetistanapp.ui.RegisterActivity">
 
 
     <Button
         android:id="@+id/btn_register_createaccount"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="356dp"
         android:background="@color/colorAccent"
         android:text="@string/create_act"

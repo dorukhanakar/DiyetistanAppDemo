@@ -8,4 +8,8 @@
     <string name="create_act">Create Account</string>
     <string name="etPassword">password</string>
     <string name="etEmail">e-mail</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
 </resources>

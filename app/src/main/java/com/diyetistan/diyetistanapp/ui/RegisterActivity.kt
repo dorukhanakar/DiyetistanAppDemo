@@ -1,13 +1,13 @@
-package com.diyetistan.diyetistanapp
+package com.diyetistan.diyetistanapp.ui
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
+import com.diyetistan.diyetistanapp.R
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : AppCompatActivity() {
@@ -42,7 +42,7 @@ class RegisterActivity : AppCompatActivity() {
                     val uid = user!!.uid
                     mDatabase.child(uid).child("Name").setValue(name)
                     Toast.makeText(this,"Kayıt Başarılı !", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this,MainActivity::class.java))
+                    startActivity(Intent(this, MainActivity::class.java))
 
                 }
                 else{
