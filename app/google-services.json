@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "83525300529",
+    "firebase_url": "https://diyetistan-8ff63.firebaseio.com",
+    "project_id": "diyetistan-8ff63",
+    "storage_bucket": "diyetistan-8ff63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83525300529:android:d5504144a2c2dd22",
+        "android_client_info": {
+          "package_name": "com.diyetistan.diyetistanapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83525300529-t2oncv9ph8r85q6tdqnhmla96ss32rd9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.diyetistan.diyetistanapp",
+            "certificate_hash": "a2f4abbf72d52b3d463021214d7e5c900c6f38f2"
+          }
+        },
+        {
+          "client_id": "83525300529-daful6gknp8in2htm8m5585e7dr5uat0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDomi1ILgeZY2c_OP7ZrKtxHT6_MKEPEwc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83525300529-daful6gknp8in2htm8m5585e7dr5uat0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

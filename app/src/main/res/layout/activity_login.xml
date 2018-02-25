@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.diyetistan.diyetistanapp.LoginActivity">
+
+    <EditText
+        android:id="@+id/et_email"
+        style="@style/viewCustom"
+        android:ems="10"
+        android:hint="@string/etEmail"
+        android:inputType="textEmailAddress" />
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/viewCustom"
+        android:layout_below="@id/et_email"
+        android:ems="10"
+        android:hint="@string/etPassword"
+        android:inputType="textPassword" />
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/viewCustom"
+        android:layout_below="@id/et_password"
+        android:background="@color/colorAccent"
+        android:text="@string/login_title"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        style="@style/viewCustom"
+        android:layout_below="@id/btn_login"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:text="Forgot Password?"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_register_account"
+        style="@style/viewCustom"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="@string/create_act"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>
