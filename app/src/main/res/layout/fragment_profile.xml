@@ -2,14 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue"
+    android:background="@color/light_gray"
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/dispTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="ProfileFragment"
-        android:textColor="@color/white" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:text="HomeFragment"
+        android:textColor="@color/colorAccent" />
 
 </RelativeLayout>

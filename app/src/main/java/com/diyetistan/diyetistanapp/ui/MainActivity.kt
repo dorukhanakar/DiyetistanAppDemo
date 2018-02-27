@@ -17,7 +17,7 @@ import com.diyetistan.diyetistanapp.helper.findNavigationPositionById
 import com.diyetistan.diyetistanapp.helper.getTag
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
-import kotlinx.android.synthetic.main.fragment_home.*
+import kotlinx.android.synthetic.main.fragment_profile.*
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 

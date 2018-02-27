@@ -8,16 +8,16 @@ import android.view.ViewGroup
 import com.diyetistan.diyetistanapp.R
 
 
-class NotificationsFragment : Fragment() {
+class DiyetFragment : Fragment() {
 
     companion object {
-        val TAG: String = NotificationsFragment::class.java.simpleName
-        fun newInstance() = NotificationsFragment()
+        val TAG: String = DiyetFragment::class.java.simpleName
+        fun newInstance() = DiyetFragment()
     }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        activity.title = getString(R.string.title_notifications)
-        val view = inflater?.inflate(R.layout.fragment_notifications, container, false)
+        activity.title = getString(R.string.title_diyet)
+        val view = inflater?.inflate(R.layout.fragment_diyet, container, false)
         return view
     }
 

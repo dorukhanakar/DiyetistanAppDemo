@@ -5,21 +5,19 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import com.diyetistan.diyetistanapp.R
 
 
-class HomeFragment : Fragment() {
+class BmrFragment : Fragment() {
 
     companion object {
-        val TAG: String = HomeFragment::class.java.simpleName
-        fun newInstance() = HomeFragment()
+        val TAG: String = BmrFragment::class.java.simpleName
+        fun newInstance() = BmrFragment()
     }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        activity.title = getString(R.string.title_home)
-        val view = inflater?.inflate(R.layout.fragment_home, container, false)
-        view!!.findViewById<TextView>(R.id.dispTxt)?.text = (activity as MainActivity).savedDispTxt
+        activity.title = getString(R.string.title_bmr)
+        val view = inflater?.inflate(R.layout.fragment_bmr, container, false)
         return view
     }
 

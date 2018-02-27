@@ -8,9 +8,9 @@
     <string name="create_act">Create Account</string>
     <string name="etPassword">password</string>
     <string name="etEmail">e-mail</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="title_profile">Profile</string>
+    <string name="title_profile">Profil</string>
+    <string name="title_bmr">BMR</string>
+    <string name="title_diyet">Diyet</string>
+    <string name="title_tarif">Tarif</string>
     <string name="title_blog">Blog</string>
 </resources>

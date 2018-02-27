@@ -22,18 +22,18 @@ fun findNavigationPositionById(id: Int): BottomNavigationPosition = when (id) {
 }
 
 fun BottomNavigationPosition.createFragment(): Fragment = when (this) {
-    BottomNavigationPosition.HOME -> HomeFragment.newInstance()
-    BottomNavigationPosition.DASHBOARD -> DashboardFragment.newInstance()
-    BottomNavigationPosition.NOTIFICATIONS -> NotificationsFragment.newInstance()
-    BottomNavigationPosition.PROFILE -> ProfileFragment.newInstance()
+    BottomNavigationPosition.HOME -> ProfileFragment.newInstance()
+    BottomNavigationPosition.DASHBOARD -> BmrFragment.newInstance()
+    BottomNavigationPosition.NOTIFICATIONS -> DiyetFragment.newInstance()
+    BottomNavigationPosition.PROFILE -> TarifFragment.newInstance()
     BottomNavigationPosition.BLOG -> BlogFragment.newInstance()
 }
 
 fun BottomNavigationPosition.getTag(): String = when (this) {
-    BottomNavigationPosition.HOME -> HomeFragment.TAG
-    BottomNavigationPosition.DASHBOARD -> DashboardFragment.TAG
-    BottomNavigationPosition.NOTIFICATIONS -> NotificationsFragment.TAG
-    BottomNavigationPosition.PROFILE -> ProfileFragment.TAG
+    BottomNavigationPosition.HOME -> ProfileFragment.TAG
+    BottomNavigationPosition.DASHBOARD -> BmrFragment.TAG
+    BottomNavigationPosition.NOTIFICATIONS -> DiyetFragment.TAG
+    BottomNavigationPosition.PROFILE -> TarifFragment.TAG
     BottomNavigationPosition.BLOG -> BlogFragment.TAG
 }
 

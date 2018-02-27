@@ -8,16 +8,16 @@ import android.view.ViewGroup
 import com.diyetistan.diyetistanapp.R
 
 
-class DashboardFragment : Fragment() {
+class TarifFragment : Fragment() {
 
     companion object {
-        val TAG: String = DashboardFragment::class.java.simpleName
-        fun newInstance() = DashboardFragment()
+        val TAG: String = TarifFragment::class.java.simpleName
+        fun newInstance() = TarifFragment()
     }
 
     override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        activity.title = getString(R.string.title_dashboard)
-        val view = inflater?.inflate(R.layout.fragment_dashboard, container, false)
+        activity.title = getString(R.string.title_tarif)
+        val view = inflater?.inflate(R.layout.fragment_tarif, container, false)
         return view
     }
 
