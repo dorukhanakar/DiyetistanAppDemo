@@ -53,7 +53,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 val user = mAuth.currentUser
                 val uid = user!!.uid
                 val result = p0.child(uid).child("Name").value
-                dispTxt.text = "Merhaba "+ result
                 savedDispTxt = "Merhaba " + result
                 dispTxt.text = savedDispTxt
             }

@@ -20,5 +20,9 @@
         android:id="@+id/profile"
         android:icon="@drawable/ic_person_black_24dp"
         android:title="@string/title_profile" />
+    <item
+        android:id="@+id/blog"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/title_blog" />
 
 </menu>
