@@ -3,6 +3,7 @@ package com.diyetistan.diyetistanapp.ui
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.view.WindowManager
 import android.widget.Toast
 import com.diyetistan.diyetistanapp.R
 import com.google.android.gms.tasks.OnCompleteListener
@@ -15,6 +16,8 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_login)
 
         btn_login.setOnClickListener {
