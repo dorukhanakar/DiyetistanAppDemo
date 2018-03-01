@@ -31,8 +31,8 @@ class LoginActivity : AppCompatActivity() {
     }
     private fun login (){
 
-        var email = et_email.text.toString()
-        var password = et_password.text.toString()
+        val email = et_email.text.toString()
+        val password = et_password.text.toString()
 
         if(!email.isEmpty() && !password.isEmpty()){
 
