@@ -22,6 +22,7 @@
         android:layout_height="40dp"
         android:layout_below="@+id/imageView"
         android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="17dp"
         android:backgroundTint="@color/white"
         android:drawableLeft="@drawable/ic_person_pin_black_24dp"
@@ -38,6 +39,7 @@
         android:layout_height="40dp"
         android:layout_below="@+id/et_email"
         android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="12dp"
         android:backgroundTint="@color/white"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
@@ -54,6 +56,7 @@
         android:layout_width="280dp"
         android:layout_below="@+id/et_password"
         android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
         android:layout_marginTop="14dp"
         android:text="@string/btc_login"
         android:textColor="@android:color/white"
@@ -63,6 +66,7 @@
         style="@style/viewCustom"
         android:layout_below="@id/btn_login"
         android:clickable="true"
+        android:focusable="true"
         android:gravity="center_horizontal"
         android:text="@string/text_forgotpass"
         android:textColor="#ffffff"
@@ -79,7 +83,7 @@
         android:layout_marginBottom="47dp"
         android:text="@string/text_createacc"
         android:textColor="#ffffff"
-        android:textSize="12dp" />
+        android:textSize="12sp" />
 
     <TextView
         android:id="@+id/btn_register_account"
@@ -92,6 +96,6 @@
         android:text="@string/text_newacc"
         android:textColor="@color/colorPrimary"
         android:textColorLink="@color/black"
-        android:textSize="12dp" />
+        android:textSize="12sp" />
 
 </RelativeLayout>
