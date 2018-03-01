@@ -10,7 +10,6 @@ import android.support.v7.widget.Toolbar
 import android.view.MenuItem
 import com.diyetistan.diyetistanapp.R
 import com.diyetistan.diyetistanapp.extension.active
-import com.diyetistan.diyetistanapp.extension.disableShiftMode
 import com.diyetistan.diyetistanapp.helper.BottomNavigationPosition
 import com.diyetistan.diyetistanapp.helper.createFragment
 import com.diyetistan.diyetistanapp.helper.findNavigationPositionById
@@ -53,7 +52,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 val user = mAuth.currentUser
                 val uid = user!!.uid
                 val result = p0.child(uid).child("Name").value
-                savedDispTxt = "Merhaba " + result
+                savedDispTxt = "Hoşgeldin " + result
                 dispTxt.text = savedDispTxt
             }
 
@@ -84,7 +83,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     }
 
     private fun setupBottomNavigation() {
-        bottomNavigation.disableShiftMode() // Extension function
+
         bottomNavigation.active(navPosition.position)   // Extension function
         bottomNavigation.setOnNavigationItemSelectedListener(this)
     }
