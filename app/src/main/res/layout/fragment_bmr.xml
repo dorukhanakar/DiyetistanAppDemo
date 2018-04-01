@@ -2,13 +2,95 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/indigo">
+    android:background="@color/light_gray">
+
+    <EditText
+        android:id="@+id/height_edit"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/weight_edit"
+        android:layout_gravity="center"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:contentDescription="kg"
+        android:gravity="center"
+        android:hint="cm" />
+
+    <EditText
+        android:id="@+id/weight_edit"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="189dp"
+        android:contentDescription="kg"
+        android:gravity="center"
+        android:hint="kg" />
 
     <TextView
+        android:id="@+id/height_text"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/height_edit"
+        android:layout_alignStart="@+id/height_edit"
+        android:layout_alignTop="@+id/weight_text"
+        android:gravity="center"
+        android:text="Boyunuz"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/weight_text"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weight_edit"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/weight_edit"
+        android:layout_marginTop="156dp"
+        android:gravity="center"
+        android:text="Kilonuz"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/bmrtitle_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="BMR Fragment"
-        android:textColor="@color/white" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Boy Kütle İndeksini Hesapla"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/bmr_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultbmr_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-193dp"
+        android:text="Hesapla" />
+
+    <TextView
+        android:id="@+id/resultbmr_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="87dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/categorybmr_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:textSize="24sp" />
 
 </RelativeLayout>
