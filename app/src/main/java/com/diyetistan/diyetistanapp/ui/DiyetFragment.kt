@@ -15,9 +15,9 @@ class DiyetFragment : Fragment() {
         fun newInstance() = DiyetFragment()
     }
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        activity.title = getString(R.string.title_diyet)
-        val view = inflater?.inflate(R.layout.fragment_diyet, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        activity?.title = getString(R.string.title_diyet)
+        val view = inflater.inflate(R.layout.fragment_diyet, container, false)
         return view
     }
 

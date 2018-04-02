@@ -27,9 +27,9 @@ class BmrFragment : Fragment() {
         fun newInstance() = BmrFragment()
     }
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        activity.title = getString(R.string.title_bmr)
-        val view = inflater?.inflate(R.layout.fragment_bmr, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        activity?.title = getString(R.string.title_bmr)
+        val view = inflater.inflate(R.layout.fragment_bmr, container, false)
 
         weight = view!!.findViewById(R.id.weight_edit)
         height = view.findViewById(R.id.height_edit)
@@ -40,13 +40,12 @@ class BmrFragment : Fragment() {
         calculate!!.setOnClickListener {
 
             bmi = 0f
-            var help = 0f
 
             val h = Integer.parseInt(height!!.text.toString())
 
             val w = Integer.parseInt(weight!!.text.toString())
 
-            help = (h * h).toFloat()
+            val help = (h * h).toFloat()
 
             bmi = w / (help / 10000)
 

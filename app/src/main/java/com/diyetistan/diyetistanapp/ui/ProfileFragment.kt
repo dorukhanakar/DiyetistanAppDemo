@@ -24,9 +24,9 @@ class ProfileFragment : Fragment() {
         fun newInstance() = ProfileFragment()
     }
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        activity.title = getString(R.string.title_profile)
-        val view = inflater?.inflate(R.layout.fragment_profile, container, false)
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        activity?.title = getString(R.string.title_profile)
+        val view = inflater.inflate(R.layout.fragment_profile, container, false)
         view!!.findViewById<TextView>(R.id.dispTxt)?.text = (activity as MainActivity).savedDispTxt
         bannerSlider1 = view.findViewById(R.id.banner_slider1)
         bannerSlider2 = view.findViewById(R.id.banner_slider2)
