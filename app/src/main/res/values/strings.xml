@@ -4,7 +4,7 @@
     <string name="password">Şifre</string>
     <string name="first_name">Adınız</string>
     <string name="last_name">Soyadınız</string>
-    <string name="title_profile">Profil</string>
+    <string name="title_profile">Ana Sayfa</string>
     <string name="title_bmr">BMR</string>
     <string name="title_diyet">Diyet</string>
     <string name="title_tarif">Tarif</string>

@@ -1,13 +1,14 @@
 package com.diyetistan.diyetistanapp.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import com.diyetistan.diyetistanapp.R
+import com.diyetistan.diyetistanapp.SliderActivity.*
 import ss.com.bannerslider.banners.Banner
 import ss.com.bannerslider.banners.RemoteBanner
 import ss.com.bannerslider.views.BannerSlider
@@ -18,6 +19,7 @@ class ProfileFragment : Fragment() {
 
     private var bannerSlider1: BannerSlider? = null
     private var bannerSlider2: BannerSlider? = null
+    var intent: Intent? = null
 
     companion object {
         val TAG: String = ProfileFragment::class.java.simpleName
@@ -38,7 +40,45 @@ class ProfileFragment : Fragment() {
 
         addBanners()
 
-        bannerSlider1!!.setOnBannerClickListener { position -> Toast.makeText(context, "Banner with position " + position.toString() + " clicked!", Toast.LENGTH_SHORT).show() }
+        bannerSlider1!!.setOnBannerClickListener { position ->
+
+            if (position.toString() == "0") {
+                val intent = Intent(activity, YemekSlider1Activity::class.java)
+                startActivity(intent)
+            }
+            if (position.toString() == "1") {
+                val intent = Intent(activity, YemekSlider2Activity::class.java)
+                startActivity(intent)
+            }
+            if (position.toString() == "2") {
+                val intent = Intent(activity, YemekSlider3Activity::class.java)
+                startActivity(intent)
+            }
+            if (position.toString() == "3") {
+                val intent = Intent(activity, YemekSlider4Activity::class.java)
+                startActivity(intent)
+            }
+        }
+
+        bannerSlider2!!.setOnBannerClickListener { position ->
+
+            if (position.toString() == "0") {
+                val intent = Intent(activity, DiyetSlider1Activity::class.java)
+                startActivity(intent)
+            }
+            if (position.toString() == "1") {
+                val intent = Intent(activity, DiyetSlider2Activity::class.java)
+                startActivity(intent)
+            }
+            if (position.toString() == "2") {
+                val intent = Intent(activity, DiyetSlider3Activity::class.java)
+                startActivity(intent)
+            }
+            if (position.toString() == "3") {
+                val intent = Intent(activity, DiyetSlider4Activity::class.java)
+                startActivity(intent)
+            }
+        }
     }
 
     private fun addBanners() {
@@ -46,30 +86,30 @@ class ProfileFragment : Fragment() {
         val remoteBanners2 = ArrayList<Banner>()
         //Add banners using image urls
         remoteBanners1.add(RemoteBanner(
-                "https://assets.materialup.com/uploads/dcc07ea4-845a-463b-b5f0-4696574da5ed/preview.jpg"
+                "http://www.adok-isg.com/wp-content/uploads/2018/05/yem1.png"
         ))
         remoteBanners1.add(RemoteBanner(
-                "https://assets.materialup.com/uploads/4b88d2c1-9f95-4c51-867b-bf977b0caa8c/preview.gif"
+                "http://www.adok-isg.com/wp-content/uploads/2018/05/yem2.jpg"
         ))
         remoteBanners1.add(RemoteBanner(
-                "https://assets.materialup.com/uploads/76d63bbc-54a1-450a-a462-d90056be881b/preview.png"
+                "http://www.adok-isg.com/wp-content/uploads/2018/05/yem3.jpg"
         ))
         remoteBanners1.add(RemoteBanner(
-                "https://assets.materialup.com/uploads/05e9b7d9-ade2-4aed-9cb4-9e24e5a3530d/preview.jpg"
+                "http://www.adok-isg.com/wp-content/uploads/2018/05/yem4.jpg"
         ))
         bannerSlider1!!.setBanners(remoteBanners1)
 
         remoteBanners2.add(RemoteBanner(
-                "https://assets.materialup.com/uploads/dcc07ea4-845a-463b-b5f0-4696574da5ed/preview.jpg"
+                "http://www.adok-isg.com/wp-content/uploads/2018/05/elma_slider.jpg"
         ))
         remoteBanners2.add(RemoteBanner(
-                "https://assets.materialup.com/uploads/4b88d2c1-9f95-4c51-867b-bf977b0caa8c/preview.gif"
+                "http://www.adok-isg.com/wp-content/uploads/2018/05/diyabet_slider.jpg"
         ))
         remoteBanners2.add(RemoteBanner(
-                "https://assets.materialup.com/uploads/76d63bbc-54a1-450a-a462-d90056be881b/preview.png"
+                "http://www.adok-isg.com/wp-content/uploads/2018/05/gaps_slider.jpg"
         ))
         remoteBanners2.add(RemoteBanner(
-                "https://assets.materialup.com/uploads/05e9b7d9-ade2-4aed-9cb4-9e24e5a3530d/preview.jpg"
+                "http://www.adok-isg.com/wp-content/uploads/2018/05/ramazan_slider.jpg"
         ))
         bannerSlider2!!.setBanners(remoteBanners2)
 

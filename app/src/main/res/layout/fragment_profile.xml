@@ -55,7 +55,7 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="169dp"
         android:gravity="center"
-        android:text="Önerilen Tarifler"
+        android:text="Yemek Tarifleri"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="24sp" />
 
@@ -67,7 +67,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="44dp"
         android:gravity="center"
-        android:text="Haber Kaynağı"
+        android:text="Diyet Programları"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="24sp" />
 

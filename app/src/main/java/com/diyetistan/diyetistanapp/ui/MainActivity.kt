@@ -39,15 +39,9 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         super.onCreate(savedInstanceState)
         restoreSaveInstanceState(savedInstanceState)
         setContentView(R.layout.activity_main)
-        toolbar = findViewById(R.id.toolbar)
-        bottomNavigation = findViewById(R.id.bottom_navigation)
-        setSupportActionBar(toolbar)
-        setupBottomNavigation()
-        initFragment(savedInstanceState)
-
         mDatabase = FirebaseDatabase.getInstance().getReference("Names")
 
-        mDatabase.addValueEventListener(object : ValueEventListener{
+        mDatabase.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
                 val user = mAuth.currentUser
                 val uid = user!!.uid
@@ -60,6 +54,11 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
             }
         })
+        toolbar = findViewById(R.id.toolbar)
+        bottomNavigation = findViewById(R.id.bottom_navigation)
+        setSupportActionBar(toolbar)
+        setupBottomNavigation()
+        initFragment(savedInstanceState)
 
     }
 
@@ -83,6 +82,7 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     }
 
     private fun setupBottomNavigation() {
+        Thread.sleep(2_500)
 
         bottomNavigation.active(navPosition.position)   // Extension function
         bottomNavigation.setOnNavigationItemSelectedListener(this)

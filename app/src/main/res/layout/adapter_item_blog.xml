@@ -19,7 +19,7 @@
         <ImageView
             android:id="@+id/adapter_item_blog_imgBackground"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="300dp" />
 
         <TextView
             android:id="@+id/adapter_item_blog_txtSummary"
@@ -27,7 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center"
-            android:text="asfjdslkşfjaslkdjdsgklsdf" />
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/adapter_item_blog_txtContent"

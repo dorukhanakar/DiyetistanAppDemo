@@ -42,7 +42,7 @@ class BlogFragment : Fragment(), ValueEventListener {
     }
 
     override fun onDataChange(dataSnapshot: DataSnapshot?) {
-
+        blogList.clear()
         dataSnapshot?.children?.forEach { dataItem ->
 
             val blogDTO = dataItem.getValue(BlogDTO::class.java)

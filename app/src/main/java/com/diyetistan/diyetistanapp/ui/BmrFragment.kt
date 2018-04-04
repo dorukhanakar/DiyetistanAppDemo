@@ -49,6 +49,7 @@ class BmrFragment : Fragment() {
 
             bmi = w / (help / 10000)
 
+
             if (bmi < 18.5) {
 
                 category!!.text = "Çok Zayıfsınız "

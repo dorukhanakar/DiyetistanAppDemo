@@ -11,9 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.MainActivity">
-
-        </activity>
+        <activity android:name=".ui.MainActivity" />
         <activity android:name=".ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,10 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.RegisterActivity">
-
-
-        </activity>
+        <activity android:name=".ui.RegisterActivity" />
+        <activity android:name=".SliderActivity.YemekSlider1Activity" />
+        <activity android:name=".SliderActivity.YemekSlider2Activity" />
+        <activity android:name=".SliderActivity.YemekSlider3Activity" />
+        <activity android:name=".SliderActivity.YemekSlider4Activity" />
+        <activity android:name=".SliderActivity.DiyetSlider1Activity" />
+        <activity android:name=".SliderActivity.DiyetSlider2Activity" />
+        <activity android:name=".SliderActivity.DiyetSlider3Activity" />
+        <activity android:name=".SliderActivity.DiyetSlider4Activity"></activity>
     </application>
 
 </manifest>

@@ -14,9 +14,11 @@
         android:layout_gravity="center"
         android:layout_marginEnd="60dp"
         android:layout_marginRight="60dp"
-        android:contentDescription="kg"
+        android:contentDescription="cm"
         android:gravity="center"
-        android:hint="cm" />
+        android:hint="cm"
+        android:inputType="number"
+        android:maxLength="3" />
 
     <EditText
         android:id="@+id/weight_edit"
@@ -31,7 +33,9 @@
         android:layout_marginTop="189dp"
         android:contentDescription="kg"
         android:gravity="center"
-        android:hint="kg" />
+        android:hint="kg"
+        android:inputType="number"
+        android:maxLength="3" />
 
     <TextView
         android:id="@+id/height_text"
