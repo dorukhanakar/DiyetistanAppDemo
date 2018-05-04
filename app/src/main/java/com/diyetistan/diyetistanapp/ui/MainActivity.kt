@@ -1,5 +1,6 @@
 package com.diyetistan.diyetistanapp.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v4.app.Fragment
@@ -7,6 +8,7 @@ import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentTransaction
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.Toolbar
+import android.view.Menu
 import android.view.MenuItem
 import com.diyetistan.diyetistanapp.R
 import com.diyetistan.diyetistanapp.extension.active
@@ -17,6 +19,7 @@ import com.diyetistan.diyetistanapp.helper.getTag
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import kotlinx.android.synthetic.main.fragment_profile.*
+
 
 class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -121,6 +124,30 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
         supportFragmentManager.beginTransaction()
                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                 .commit()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater = menuInflater
+        inflater.inflate(R.menu.menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(menuItem: MenuItem): Boolean {
+
+        when (menuItem.itemId) {
+
+            R.id.logoff -> {
+
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+            }
+
+
+            else -> {
+            }
+        }
+
+        return super.onOptionsItemSelected(menuItem)
     }
 
 
